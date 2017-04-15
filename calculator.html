@@ -5,57 +5,54 @@
       <meta charset="utf-8" /> 
    </head>
    <body>
-      <article> 
-         <header>
-            <figure>
-               <img src="webLogo.png" alt="Логотип" height="100" width="200" /> 
-               <figcaption><b>SoftServe academy</b></figcaption> 
-            </figure>   
-               <h1 id="top">Основы WEB-технологий</h1>
+       <header>
+         <img src="webLogo.png" alt="Логотип" height="100" width="200" /> 
+         <h1 id="top">Основы WEB-технологий</h1>
+         <nav>
             <ul>
                <li><a href="index.html">Главная</a></li>
                <li><a href="WEB-technologies.html">WEB-технологии</a>
-                  <ul>
-                     <li><a href="html5.html">HTML5</a></li>
-                     <li><a href="css3.html">CSS3</a></li>
-                     <li><a href="JavaScript.html">JavaScript</a></li>
-                  </ul>
+               <ul>
+                  <li><a href="html5.html">HTML5</a></li>
+                  <li><a href="css3.html">CSS3</a></li>
+                  <li><a href="JavaScript.html">JavaScript</a></li>
+               </ul>
                </li>
                <li><a href="calculator.html">Калькулятор</a></li>
                <li><a href="test.html">Тест</a></li>
             </ul>
-         </header>
-      </article>
+         </nav>
+      </header>
       <div id="calculator">
          <table border="1">
             <tr>
                <td colspan="5"><input id="editWide" name="ReadOut" type="Text"></td>
             </tr>
             <tr>
-               <td><input type="button" name="btnSeven" value="7" onclick="NumPressed(7)"/></td>
-               <td><input type="button" name="btnEight" value="8" onclick="NumPressed(8)"/></td>
-               <td><input type="button" name="btnNine" value="9" onclick="NumPressed(9)"/></td>
-               <td><input type="button" name="btnDivide" value="/" onclick="Operation('/')" /></td>
-               <td><input type="button" name="btnClear" value="C" onclick="Clear()"/></td>
+               <td><button type="button" name="btnSeven" value="7" onclick="NumPressed(7)">7</button></td>
+               <td><button type="button" name="btnEight" value="8" onclick="NumPressed(8)">8</button></td>
+               <td><button type="button" name="btnNine" value="9" onclick="NumPressed(9)">9</button></td>
+               <td><button type="button" name="btnDivide" value="/" onclick="Operation('/')">/</button></td>
+               <td><button type="button" name="btnClear" value="C" onclick="Clear()">C</button></td>
             </tr>
             <tr>
-               <td><input type="button" name="btnFour" value="4" onclick="NumPressed(4)"/></td>
-               <td><input type="button" name="btnFive" value="5" onclick="NumPressed(5)"/></td>
-               <td><input type="button" name="btnSix" value="6" onclick="NumPressed(6)"/></td>
-               <td><input type="button" name="btnMultiplay" value="*" onclick="Operation('*')"/></td>
-               <td><input type="button" name="btnNeg" value="&#177;" onclick="Neg()"/></td>
+               <td><button type="button" name="btnFour" value="4" onclick="NumPressed(4)">4</button></td>
+               <td><button type="button" name="btnFive" value="5" onclick="NumPressed(5)">5</button></td>
+               <td><button type="button" name="btnSix" value="6" onclick="NumPressed(6)">6</button></td>
+               <td><button type="button" name="btnMultiplay" value="*" onclick="Operation('*')">*</button></td>
+               <td><button type="button" name="btnNeg" value="&#177;" onclick="Neg()">&#177;</button></td>
             </tr>
             <tr>
-               <td><input type="button" name="btnOne" value="1" onclick="NumPressed(1)"/></td>
-               <td><input type="button" name="btnTwo" value="2" onclick="NumPressed(2)"/></td>
-               <td><input type="button" name="btnThree" value="3" onclick="NumPressed(3)"/></td>
-               <td><input type="button" name="btnMinus" value="-" onclick="Operation('-')"/></td>
-               <td rowspan="2"><input type="button" name="btnDecimal" value="=" onclick="Decimal()"/></td>
+               <td><button type="button" name="btnOne" value="1" onclick="NumPressed(1)">1</button></td>
+               <td><button type="button" name="btnTwo" value="2" onclick="NumPressed(2)">2</button></td>
+               <td><button type="button" name="btnThree" value="3" onclick="NumPressed(3)">3</button></td>
+               <td><button type="button" name="btnMinus" value="-" onclick="Operation('-')">-</button></td>
+               <td rowspan="2"><button type="button" name="btnDecimal" value="=" onclick="Decimal()">=</button></td>
             </tr>
             <tr>
-               <td colspan="2"><input type="button" name="btnEquals" value="0" onclick="Operation('=')"/></td>
-               <td><input type="button" name="btnDecimal" value="." onclick="Decimal()"/></td>
-               <td><input type="button" name="btnPlus" value="+" onclick="Operation('+')"/></td>
+               <td colspan="2"><button type="button" name="btnEquals" value="0" onclick="Operation('=')">0</button></td>
+               <td><button type="button" name="btnDecimal" value="." onclick="Decimal()">.</button></td>
+               <td><button type="button" name="btnPlus" value="+" onclick="Operation('+')">+</button></td>
             </tr>
          </table>
       </div>         
@@ -63,8 +60,8 @@
       <footer>
          <address>
          Пишите:<a href="cenia703@mail.ru">cenia703@mail.ru</a>
-         <p>&#169;Довгополик Сергей Владимирович, 2017г.</p>
          </address>
+         <div id="author">&#169;Довгополик Сергей Владимирович, 2017г.</div>
       </footer>
    </body>
 </html>
