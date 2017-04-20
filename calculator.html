@@ -24,39 +24,40 @@
          </nav>
       </header>
       <div id="calculator">
-         <table border="1">
-            <tr>
-               <td colspan="5"><input id="editWide" name="ReadOut" type="Text"></td>
-            </tr>
-            <tr>
-               <td><button type="button" name="btnSeven" value="7" onclick="NumPressed(7)">7</button></td>
-               <td><button type="button" name="btnEight" value="8" onclick="NumPressed(8)">8</button></td>
-               <td><button type="button" name="btnNine" value="9" onclick="NumPressed(9)">9</button></td>
-               <td><button type="button" name="btnDivide" value="/" onclick="Operation('/')">/</button></td>
-               <td><button type="button" name="btnClear" value="C" onclick="Clear()">C</button></td>
-            </tr>
-            <tr>
-               <td><button type="button" name="btnFour" value="4" onclick="NumPressed(4)">4</button></td>
-               <td><button type="button" name="btnFive" value="5" onclick="NumPressed(5)">5</button></td>
-               <td><button type="button" name="btnSix" value="6" onclick="NumPressed(6)">6</button></td>
-               <td><button type="button" name="btnMultiplay" value="*" onclick="Operation('*')">*</button></td>
-               <td><button type="button" name="btnNeg" value="&#177;" onclick="Neg()">&#177;</button></td>
-            </tr>
-            <tr>
-               <td><button type="button" name="btnOne" value="1" onclick="NumPressed(1)">1</button></td>
-               <td><button type="button" name="btnTwo" value="2" onclick="NumPressed(2)">2</button></td>
-               <td><button type="button" name="btnThree" value="3" onclick="NumPressed(3)">3</button></td>
-               <td><button type="button" name="btnMinus" value="-" onclick="Operation('-')">-</button></td>
-               <td rowspan="2"><button type="button" name="btnDecimal" value="=" onclick="Decimal()">=</button></td>
-            </tr>
-            <tr>
-               <td colspan="2"><button type="button" name="btnEquals" value="0" onclick="Operation('=')">0</button></td>
-               <td><button type="button" name="btnDecimal" value="." onclick="Decimal()">.</button></td>
-               <td><button type="button" name="btnPlus" value="+" onclick="Operation('+')">+</button></td>
-            </tr>
-         </table>
+         <form id="simpleCalculator">
+            <table border="1">
+               <tr>
+                  <td colspan="5"><input id="editWide" name="ReadOut" type="Text"></td>
+               </tr>
+               <tr>
+                  <td><button type="button" name="btnSeven" value="7">7</button></td>
+                  <td><button type="button" name="btnEight" value="8">8</button></td>
+                  <td><button type="button" name="btnNine" value="9">9</button></td>
+                  <td><button type="button" name="btnDivide" value="/">/</button></td>
+                  <td><button type="button" name="btnClear" value="C">C</button></td>
+               </tr>
+               <tr>
+                  <td><button type="button" name="btnFour" value="4">4</button></td>
+                  <td><button type="button" name="btnFive" value="5">5</button></td>
+                  <td><button type="button" name="btnSix" value="6">6</button></td>
+                  <td><button type="button" name="btnMultiplay" value="*">*</button></td>
+                  <td><button type="button" name="btnNeg" value="&#177;">&#177;</button></td>
+               </tr>
+               <tr>
+                  <td><button type="button" name="btnOne" value="1">1</button></td>
+                  <td><button type="button" name="btnTwo" value="2">2</button></td>
+                  <td><button type="button" name="btnThree" value="3">3</button></td>
+                  <td><button type="button" name="btnMinus" value="-">-</button></td>
+                  <td rowspan="2"><button type="button" name="btnDecimal" value="=">=</button></td>
+               </tr>
+               <tr>
+                  <td colspan="2"><button type="button" name="btnEquals" value="0">0</button></td>
+                  <td><button type="button" name="btnDecimal" value=".">.</button></td>
+                  <td><button type="button" name="btnPlus" value="+">+</button></td>
+               </tr>
+            </table>
+         </form>
       </div>         
-      <br />
       <footer>
          <address>
          Пишите:<a href="cenia703@mail.ru">cenia703@mail.ru</a>
