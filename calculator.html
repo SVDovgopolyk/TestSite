@@ -3,6 +3,7 @@
    <head>
       <title>calculator</title>
       <meta charset="utf-8" /> 
+      <link rel="stylesheet" href="style.css" />
    </head>
    <body>
        <header>
@@ -25,7 +26,7 @@
       </header>
       <div id="calculator">
          <form id="simpleCalculator" name="clctor">
-            <table border="1">
+            <table>
                <tr>
                   <td colspan="5"><input id="editWide" name="ReadOut" type="Text"></td>
                </tr>
@@ -48,10 +49,10 @@
                   <td><button type="button" name="btnTwo" value="2">2</button></td>
                   <td><button type="button" name="btnThree" value="3">3</button></td>
                   <td><button type="button" name="btnMinus" value="-">-</button></td>
-                  <td rowspan="2"><button type="button" name="btnDecimal" value="=">=</button></td>
+                  <td rowspan="2"><button type="button" class="equally" name="btnDecimal" value="=">=</button></td>
                </tr>
                <tr>
-                  <td colspan="2"><button type="button" name="btnEquals" value="0">0</button></td>
+                  <td colspan="2"><button type="button" class="zero" name="btnEquals" value="0">0</button></td>
                   <td><button type="button" name="btnDecimal" value=".">.</button></td>
                   <td><button type="button" name="btnPlus" value="+">+</button></td>
                </tr>
