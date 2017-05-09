@@ -10,7 +10,8 @@
          margin-top:0;
          font-family: Arial, Helvetica, sans-serif;
          text-align: justify;
-   }   
+         min-width: 800px;
+   } 
    img {
         float:left;
         position: relative; 
@@ -68,13 +69,13 @@
    #top { 
         margin-top: 0px;
         padding-top: 1em;
+        white-space: pre; /* Если текс не помещается в указанную область, он не переносится на новую строку */
   }
   nav ul li {
              display: inline-block;
              position: relative;
   }
   ul li dl  {
-             font: Arial;
              text-align: justify;
              line-height: 1;
   }
@@ -108,25 +109,12 @@
       margin-top: 0; /* убираем пробелы между абзацами */
       margin-bottom: 0; /* убираем пробелы между абзацами */
    }
-   #CSS3 {
-          background: white; /* фон */
-          border-radius: 10px; /* скругление углов */
-          padding: 5px; /* внутреннее отступы */
-          margin-top: -1em; /* убираем полосу между хедером и дивом */
+   #CSS3, #JavaScript, #calculator {
+                                    background: white; /* фон */
+                                    border-radius: 10px; /* скругление углов */
+                                    padding: 5px; /* внутреннее отступы */
+                                    margin-top: -1em; /* убираем полосу между хедером и дивом */
    }
-   #JavaScript {
-                background: white; /* фон */
-                border-radius: 10px; /* скругление углов */
-                padding: 5px; /* внутреннее отступы */
-                margin-top: -1em; /* убираем полосу между хедером и дивом */
-   }
-   #calculator {
-                background: white; /* фон */
-                border-radius: 10px; /* скругление углов */
-                padding: 5px; /* внутреннее отступы */
-                margin-top: -1em; /* убираем полосу между хедером и дивом */
-   }
-  
   #simpleCalculator table {
                            margin: auto; /* выравнивание калькулятора по центру */
                            display: table;/* Определяет, что элемент является блочной таблицей */
@@ -157,3 +145,15 @@
          width: 100%; /* ширина кнопки "0" */
          height: 100%; /* высота кнопки "0" */
   }
+  #groups ul {
+              margin-top: 0;
+              font-size: 12pt; 
+  }
+  #groups ul li dl {
+                    margin-top: 0;
+                    font-size: 12pt; 
+  }
+   #groups ul li {
+                  margin-top: 0;
+                  margin-bottom: -1em;
+   }
