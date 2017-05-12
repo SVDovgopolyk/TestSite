@@ -1,16 +1,14 @@
 ﻿
    body {
          background: gray;
-         border-left: 20%;
-         border-right: 20%;
-         border-top: 0%;
          border-radius: 10px;
-         margin-left: 20%;
-         margin-right:20%;
-         margin-top:0;
+         margin-top: 0;/* отступ сверху */
+         margin-left: auto;/*вненший отступс лева   */
+         margin-right: auto;/*внешний отступ с права */
          font-family: Arial, Helvetica, sans-serif;
          text-align: justify;
-         min-width: 800px;
+         max-width: 1000px;
+         
    } 
    img {
         float:left;
@@ -69,7 +67,6 @@
    #top { 
         margin-top: 0px;
         padding-top: 1em;
-        white-space: pre; /* Если текс не помещается в указанную область, он не переносится на новую строку */
   }
   nav ul li {
              display: inline-block;
@@ -86,7 +83,8 @@
       list-style: none; 
       font-size: 10pt; 
    }
-   li ul {
+   /* настройка подменю */
+   li ul { 
           display: none; 
           border: 1px solid;
           width: 60px;
@@ -98,9 +96,6 @@
    li a {
          background-color: white; /* фон */
          border-bottom: none; 
-   }
-   li a:hover {
-               background-color: white; /* фон */
    }
    li:hover ul { 
                 display: block; /* подменю видно только при наведении мыши */
